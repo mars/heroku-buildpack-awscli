@@ -7,7 +7,9 @@ allows one to run [AWS CLI](https://aws.amazon.com/cli/) in a dyno alongside app
 Usage
 -----
 
-Example usage:
+Usually this buildpack will supplement the main buildpack for an app.
+
+This example prepends this buildpack as `--index=1` to any existing buildpacks for the app:
 
 ```bash
 heroku buildpacks:add --index=1 mars/awscli
